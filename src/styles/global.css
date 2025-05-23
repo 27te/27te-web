@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: Bricolage;
+  font-weight: 100 900;
+  src: url('../assets/fonts/BricolageGrotesque.woff2') format('woff2');
+  font-display: swap;
+}
+
+@theme {
+  --font-sans:Bricolage,sans-serif;
+  --color-primary:#FAF6E9;
+  --color-font:#1f1f1f;
+}
