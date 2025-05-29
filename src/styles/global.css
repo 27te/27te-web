@@ -1,8 +1,12 @@
 @import 'tailwindcss';
 
-html,body{
-scroll-behavior:smooth ;
+html, body{
+  @apply scroll-smooth;
 } 
+
+a,button{
+  @apply cursor-pointer;
+}
 
 @font-face {
   font-family: Bricolage;
