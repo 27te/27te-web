@@ -18,5 +18,6 @@ a,button{
 @theme {
   --font-sans:Bricolage,sans-serif;
   --color-primary:#FAF6E9;
+  --color-red:#F8E8E3;
   --color-font:#1f1f1f;
 }
