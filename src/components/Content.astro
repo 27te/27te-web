@@ -8,6 +8,39 @@
       sobrepensamiento desde una mirada honesta y personal. No separo estos
       roles: la tecnología y la creatividad forman parte del mismo propósito.
     </p>
+    <div class="flex gap-2 items-center md:flex-row flex-col">
+      <img
+        src="/27te.png"
+        alt="27te profile instagram"
+        title="27te profile instagram"
+        draggable="false"
+        class="h-[600px] mt-5 rounded-sm shadow-md"
+      />
+      <div
+        class="flex flex-row md:mt-0 mt-4 md:flex-col text-7xl font-bold text-red-800 text-shadow-md"
+      >
+        <span
+          class="span-text hover:scale-110 cursor-grab transition-transform duration-200"
+          >무</span
+        >
+        <span
+          class="span-text hover:scale-110 cursor-grab transition-transform duration-200"
+          >자</span
+        >
+        <span
+          class="span-text hover:scale-110 cursor-grab transition-transform duration-200"
+          >비</span
+        >
+        <span
+          class="span-text hover:scale-110 cursor-grab transition-transform duration-200"
+          >하</span
+        >
+        <span
+          class="span-text hover:scale-110 cursor-grab transition-transform duration-200"
+          >게</span
+        >
+      </div>
+    </div>
   </div>
   <div>
     <h2 class="text-xl font-bold">Trabajos</h2>
@@ -143,7 +176,31 @@
         >
           @27te-LinkdIn
         </a>
+        <a
+          href="https://www.instagram.com/__27te__"
+          title="27te Instagram"
+          class="text-sm font-medium text-font/80 underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @27te-Instagram
+        </a>
       </div>
     </div>
   </div>
 </section>
+<script>
+  const body = document.body;
+  const spans = document.querySelectorAll(".span-text");
+
+  spans.forEach((span) => {
+    span.addEventListener("click", () => {
+      body.classList.remove("bg-primary");
+      body.classList.add("bg-red");
+      setTimeout(() => {
+        body.classList.remove("bg-red");
+        body.classList.add("bg-primary");
+      }, 1000);
+    });
+  });
+</script>
