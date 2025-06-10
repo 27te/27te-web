@@ -1,3 +1,19 @@
+---
+const data = await fetch("https://mblcdev.com/api/book");
+const response = await data.json();
+const sortedResponse = response.sort(
+  (a: Book, b: Book) =>
+    new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+);
+interface Book {
+  data: {
+    title: string;
+    pubDate: string;
+  };
+  slug: string;
+}
+---
+
 <section class="my-10 flex flex-col gap-4">
   <div>
     <h2 class="text-xl font-bold">Quien Soy?</h2>
@@ -114,18 +130,24 @@
         </p>
         <strong class="uppercase text-base">Capítulos Recientes</strong>
         <ul class="flex flex-col gap-2 mt-2">
-          <li class="border-b border-font/20 flex justify-between">
-            <a href="https://mblcdev.com/books/chapter-1" target="_blank">
-              Capitulo 01
-            </a>
-            <p>2025</p>
-          </li>
-          <li class="border-b border-font/20 flex justify-between">
-            <a href="https://mblcdev.com/books/chapter-2" target="_blank">
-              Capitulo 02</a
-            >
-            <p>2025</p>
-          </li>
+          {
+            sortedResponse.map((book: Book) => {
+              const url = book.slug.split("/").pop();
+              return (
+                <li class="border-b border-font/20 flex justify-between">
+                  <a
+                    href={`https://mblcdev.com/books/${url}`}
+                    target="_blank"
+                    title={book.data.title}
+                    rel="noopener noreferrer"
+                    class="text-base text-font/90 hover:text-green-800"
+                  >
+                    {book.data.title}
+                  </a>
+                </li>
+              );
+            })
+          }
         </ul>
       </div>
     </div>
