@@ -16,13 +16,13 @@ interface Book {
 
 <section class="my-10 flex flex-col gap-4">
   <div>
-    <h2 class="text-xl font-bold">Quien Soy?</h2>
-    <p class="mt-2 text-justify text-base hyphens-auto">
-      Lidero proyectos tecnológicos que nacen de ideas claras y evolucionan
-      hacia soluciones concretas. Al mismo tiempo, soy Sombra, autor de El
-      diario del otro yo, donde exploro temas como salud mental, creatividad y
-      sobrepensamiento desde una mirada honesta y personal. No separo estos
-      roles: la tecnología y la creatividad forman parte del mismo propósito.
+    <h2 class="text-xl font-bold text-font">Quien Soy?</h2>
+    <p class="mt-2 text-justify text-base hyphens-auto text-font">
+      Soy Antonio Aranibar Leandro (27te), CEO y cofundador de mblcdev, una
+      agencia de desarrollo de software con foco en innovación y crecimiento.
+      Este portafolio muestra mi trabajo y mi visión, que combinan la estrategia
+      para construir productos escalables con una mirada personal y creativa que
+      también me define.
     </p>
     <div class="flex gap-2 items-center md:flex-row flex-col">
       <img
@@ -32,47 +32,23 @@ interface Book {
         draggable="false"
         class="h-[600px] mt-5 rounded-sm shadow-md"
       />
-      <div
-        class="flex flex-row md:mt-0 mt-4 md:flex-col text-7xl font-bold text-red-800 text-shadow-md"
-      >
-        <span
-          class="span-text hover:scale-110 cursor-grab transition-transform duration-200"
-          >무</span
-        >
-        <span
-          class="span-text hover:scale-110 cursor-grab transition-transform duration-200"
-          >자</span
-        >
-        <span
-          class="span-text hover:scale-110 cursor-grab transition-transform duration-200"
-          >비</span
-        >
-        <span
-          class="span-text hover:scale-110 cursor-grab transition-transform duration-200"
-          >하</span
-        >
-        <span
-          class="span-text hover:scale-110 cursor-grab transition-transform duration-200"
-          >게</span
-        >
-      </div>
     </div>
   </div>
   <div>
-    <h2 class="text-xl font-bold">Trabajos</h2>
+    <h2 class="text-xl font-bold text-font">Trabajos</h2>
     <ul
       class="mt-3 text-justify text-base hyphens-auto flex flex-col gap-1 divide-y divide-font/20"
     >
       <li class="p-2 flex justify-between items-center">
         <div class="w-20">
           <span
-            class="bg-green-800 text-primary px-1 text-xs font-semibold align-middle inline-block rounded-sm uppercase tracking-tighter"
+            class="bg-green-800 text-font px-1 text-xs font-semibold align-middle inline-block rounded-sm uppercase tracking-tighter"
           >
             Agency
           </span>
         </div>
-        <p class="w-full ml-4">mblcdev</p>
-        <span class="inline-block text-nowrap"> 10-07-2024 </span>
+        <p class="w-full ml-4 text-font">mblcdev</p>
+        <span class="inline-block text-nowrap text-font"> 10-07-2024 </span>
       </li>
       <li class="p-2 flex justify-between items-center">
         <div class="w-20">
@@ -82,8 +58,8 @@ interface Book {
             SAAS
           </span>
         </div>
-        <p class="w-full ml-4">MB Inventory</p>
-        <span class="inline-block text-nowrap"> **-07-2025 </span>
+        <p class="w-full ml-4 text-font">MB Inventory</p>
+        <span class="inline-block text-nowrap text-font"> **-07-2025 </span>
       </li>
       <li class="p-2 flex justify-between items-center">
         <div class="w-20">
@@ -93,42 +69,44 @@ interface Book {
             SAAS
           </span>
         </div>
-        <p class="w-full ml-4">Generador de Contratos con IA</p>
-        <span class="inline-block text-nowrap"> **-07-2025 </span>
+        <p class="w-full ml-4 text-font">Generador de Contratos con IA</p>
+        <span class="inline-block text-nowrap text-font"> **-07-2025 </span>
       </li>
       <li class="p-2 flex justify-between items-center">
         <div class="w-20">
           <span
-            class="bg-blue-700 text-primary px-1 text-xs font-semibold align-middle inline-block rounded-sm uppercase tracking-tighter"
+            class="bg-blue-700 text-font px-1 text-xs font-semibold align-middle inline-block rounded-sm uppercase tracking-tighter"
           >
             Website
           </span>
         </div>
-        <p class="w-full mx-4">Mad Exhibitions</p>
-        <span class="inline-block text-nowrap"> 12-04-2025 </span>
+        <p class="w-full mx-4 text-font">Mad Exhibitions</p>
+        <span class="inline-block text-nowrap text-font"> 12-04-2025 </span>
       </li>
     </ul>
     <div
-      class="border border-font/10 mt-4 rounded-sm h-full sm:h-80 flex flex-col sm:flex-row p-2 gap-10"
+      class="border border-font/20 mt-4 rounded-sm h-full sm:h-80 flex flex-col sm:flex-row p-2 gap-10"
     >
       <div class="w-full h-full flex justify-center items-center">
         <img
           src="/cover.png"
           alt="cover de libro el diario del otro yo autor sombra de mblcdev.com"
           title="cover de libro el diario del otro yo autor sombra de mblcdev.com"
-          class="h-60 aspect-auto mix-blend-multiply drop-shadow-lg"
+          class="h-60 aspect-auto drop-shadow-lg"
         />
       </div>
       <div class="flex justify-center flex-col">
-        <span class="text-green-700 text-sm">En Producción</span>
-        <h2 class="font-bold text-lg uppercase tracking-wide">
+        <span class="text-green-600 text-sm">En Producción</span>
+        <h2 class="font-bold text-lg uppercase tracking-wide text-font">
           El Diario del otro yo
         </h2>
-        <p class="text-base font-light my-2">
+        <p class="text-base font-light my-2 text-font">
           Una obra íntima y reflexiva que se adentra en los rincones ocultos de
           la mente a través de un personaje ficticio llamado Sombra.
         </p>
-        <strong class="uppercase text-base">Capítulos Recientes</strong>
+        <strong class="uppercase text-base text-font mt-5"
+          >Capítulos Recientes</strong
+        >
         <ul class="flex flex-col gap-2 mt-2">
           {
             sortedResponse.map((book: Book) => {
@@ -140,7 +118,7 @@ interface Book {
                     target="_blank"
                     title={book.data.title}
                     rel="noopener noreferrer"
-                    class="text-base text-font/90 hover:text-green-800"
+                    class="text-base text-font/90 hover:text-green-700"
                   >
                     {book.data.title}
                   </a>
@@ -153,22 +131,22 @@ interface Book {
     </div>
   </div>
   <div>
-    <h2 class="text-xl font-bold">Mi Vision</h2>
-    <p class="mt-2 text-justify text-base hyphens-auto">
+    <h2 class="text-xl font-bold text-font">Mi Vision</h2>
+    <p class="mt-2 text-justify text-base hyphens-auto text-font">
       Mi objetivo no es solo crecer, sino crear un proyecto sólido y coherente
       que se imponga por calidad e identidad propia. Busco que la agencia sea
       referente sin copiar y que la narrativa conecte por autenticidad.
     </p>
   </div>
   <div>
-    <h2 class="text-xl font-bold">Colabora conmigo</h2>
-    <p class="mt-2 text-justify text-base hyphens-auto">
+    <h2 class="text-xl font-bold text-font">Colabora conmigo</h2>
+    <p class="mt-2 text-justify text-base hyphens-auto text-font">
       Trabajo con empresas, creativos e inversores que valoran tanto la
       estrategia como la autenticidad. Si buscas resultados concretos y un
       enfoque real, este es el lugar para empezar.
     </p>
     <div class="mt-4">
-      <h3 class="font-semibold text-lg">Contact</h3>
+      <h3 class="font-semibold text-lg text-font">Contact</h3>
       <div class="flex flex-col mt-1 gap-1">
         <a
           href="mailto:antonio@mblcdev.com"
@@ -211,18 +189,3 @@ interface Book {
     </div>
   </div>
 </section>
-<script>
-  const body = document.body;
-  const spans = document.querySelectorAll(".span-text");
-
-  spans.forEach((span) => {
-    span.addEventListener("click", () => {
-      body.classList.remove("bg-primary");
-      body.classList.add("bg-red");
-      setTimeout(() => {
-        body.classList.remove("bg-red");
-        body.classList.add("bg-primary");
-      }, 1000);
-    });
-  });
-</script>
