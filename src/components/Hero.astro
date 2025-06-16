@@ -1,9 +1,64 @@
-<section
-  class="relative flex items-center flex-col overflow-hidden min-h-screen bg-[url(/bg.png)] bg-fixed bg-center bg-cover mask-b-from-0"
->
-  <h1
-    class="text-font font-extrabold text-8xl sm:text-[10rem] md:text-[13rem] lg:text-[15rem] absolute bottom-28 lg:bottom-8"
-  >
-    ANTONIO
-  </h1>
-</section>
+<main class="h-[300vh] overflow-x-hidden bg-primary overscroll-none">
+  <div id="logo-mask" class="fixed top-0 w-full h-screen">
+    <section>
+      <picture
+        id="hero-key"
+        class="h-screen scale-125 overflow-hidden fixed flex justify-center items-center"
+      >
+        <img
+          src="/end.svg"
+          class="absolute bg-font h-40 opacity-80 mask-x-to-transparent px-20"
+          id="hero-key-logo"
+          draggable="false"
+        />
+        <img
+          src="/ga.png"
+          id="hero-key-background"
+          class="w-screen h-full object-cover"
+          draggable="false"
+        />
+      </picture>
+    </section>
+  </div>
+</main>
+
+<style>
+  #logo-mask {
+    background: #fff;
+    mask-image: url("/end.svg");
+    mask-position: center 25%;
+    mask-repeat: no-repeat;
+    mask-size: clamp(6000vh, 4500%, 0vh);
+  }
+</style>
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+  const tl = gsap.timeline({
+    ease: "power2.out",
+    scrollTrigger: {
+      scrub: 1,
+    },
+  });
+
+  tl.to("#hero-key", { duration: 1, scale: 1 })
+    .to(
+      "#hero-key-logo",
+      {
+        opacity: 0,
+        duration: 0.5,
+      },
+      "<"
+    )
+    .to(
+      "#logo-mask",
+      {
+        maskSize: "clamp(20vh,25%,30vh)",
+      },
+      0.15
+    )
+    .to("#hero-key", { opacity: 0, duration: 0.2 }, 0.4)
+    .to("#logo-mask", { opacity: 0 });
+</script>
