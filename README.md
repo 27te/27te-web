@@ -1,3 +1,3 @@
-# 27te website
+# 27te 
 
-This is a new portfolio minimalist style for me
+This website is the best new portfolio 
